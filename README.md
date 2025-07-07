@@ -6,13 +6,13 @@ This repository contains a collection of my first projects from a university cou
 
 This repository contains the following HTML files:
 
-- **index-5.html**  
+- `index-5.html` 
   A demonstration page that includes a variety of basic HTML elements such as headings, ordered and unordered lists, tables, divs, images, and links.
 
-- **Coffee.html**  
+- `Coffee.html` 
   A text-based page that practices content formatting. It contains an article on how to make coffee, structured with paragraphs and headings.
 
-- **My page.html**  
+- `My page.html` 
   A creative "About Me" page that uses images to answer a series of personal questions, demonstrating the use of the `<img>` tag.
 
 ## How to Use
