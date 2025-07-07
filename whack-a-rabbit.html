@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>First p5s drawing</title>
+    <script src="scripts/p5.min.js"></script>
+    <script src="scripts/sketch.js"></script>
+</head>
+<body>
+<script>
+let score = 0
+let already_attacked = false
+let hor = 0
+let vert = 0
+
+function setup() {
+	createCanvas(400, 400);
+}
+
+function drawRabbit(x, y){
+    ellipse(x-20,y-45,20,80);
+    ellipse(x+20,y-45,20,80);
+    ellipse(x,y-20,80,40);
+}
+function drawHoles(){
+    for(let i=0;i<3;i++){
+        for(let j=0;j<3;j++){
+            ellipse(60+140*i,100+j*100,80,20)
+        }
+    }
+}
+function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function mouseClicked(){
+    if (hor < mouseX + 40 && hor > mouseX - 40
+    && vert < mouseY+80 && vert > mouseY
+    && already_attacked == false){
+        console.log("+1");
+        score++;
+        fill(255,0,0);
+        drawRabbit(hor,vert);
+        already_attacked = true;
+        cursor('', 16, 16);
+}
+}
+
+
+function draw(){
+    frameRate(0.5)
+    background('green');
+    fill(90)
+    drawHoles();
+    fill(300)
+    hor = 60 +getRandomInt(0,2)*140
+    vert = 100 +getRandomInt(0,2)*100
+    drawRabbit(hor, vert)
+    fill(240)
+    rect(10, 10, 380, 28);
+    textSize(16);
+    fill(10)
+    text('Score: ', 140, 30 );
+    text(score, 250, 30 );
+
+    cursor('images/hammer.png', 16, 16);
+    already_attacked = false
+}
+
+</script>
+</body>
+</html>
