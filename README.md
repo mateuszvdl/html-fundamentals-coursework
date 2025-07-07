@@ -1,15 +1,15 @@
-# Web Fundamentals Coursework (HTML & CSS)
+# Web Fundamentals Coursework (HTML, CSS & JavaScript)
 
-Welcome to my web fundamentals repository! This collection showcases my initial projects from a university course, tracking my journey as I learn the core concepts of web development — from structuring pages with HTML to styling them with CSS.
+Welcome to my web fundamentals repository! This collection showcases my initial projects from a university course, tracking my journey as I learn the core concepts of web development — from structuring pages with HTML, to styling them with CSS, and adding interactivity with JavaScript.
 
 ## Projects Included
 
 ### HTML Basics
 
-- `index-5.html` 
+- `index-5.html`  
   A demonstration page that includes a variety of basic HTML elements such as headings, ordered and unordered lists, tables, divs, images, and links.
 
-- `Coffee.html`  
+- `Coffee.html` 
   A text-based page that practices content formatting. It contains an article on how to make coffee, structured with paragraphs and headings.
 
 - `My page.html`
@@ -17,8 +17,13 @@ Welcome to my web fundamentals repository! This collection showcases my initial 
 
 ### Introduction to CSS
 
-- `Strefy SWPS.html` & `css/styles.css` 
+- `Strefy SWPS.html` & `styles.css` 
   A project that introduces Cascading Style Sheets (CSS) to style a web page. It demonstrates how to use an external stylesheet to control layout, colors, fonts, and create interactive hover effects for navigation.
+
+### Introduction to JavaScript
+
+- `intro_to_JS.html`  
+  This file introduces JavaScript for client-side interactivity. It demonstrates how to manipulate the Document Object Model (DOM) to change content and styles based on user events, like button clicks.
 
 ## How to Use
 
@@ -30,6 +35,7 @@ To view these web pages, you can either:
 - **Use a live server**  
   For a better development experience, use a tool like the **Live Server** extension in Visual Studio Code to host the files locally.
 
-> **Note:** For the `Strefy_SWPS.html` page to display correctly, make sure:
-> - The `styles.css` file is placed in a `css/` subfolder.
-> - Any image files used are located in an `images/` subfolder.
+> **Note:**  
+> For the `Strefy SWPS.html` page to display correctly:
+> - The `styles.css` file must be located in a `css/` subfolder.  
+> - Any images must be stored in an `images/` subfolder.
