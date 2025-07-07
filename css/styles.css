@@ -1,0 +1,38 @@
+.psyche{
+	background-color: powderblue;
+}
+
+.design{
+	background-color: lightcoral;
+}
+
+.header{
+	text-align: center;
+	background-color: dimgrey;
+	margin: 0
+}
+
+body{
+	font-family: 'Lato', sans-serif;
+}
+
+img{
+	width: 100%;
+}
+
+h1{
+	text-align: center;
+}
+
+section{
+	padding: 0 30% 18px 30%;
+}
+
+a:hover{
+	color: white;
+	background-color: dimgray;
+	padding-top: 10px;
+	padding-bottom: 12px;
+	border-top:2px solid white;
+	border-bottom:2px
+}
