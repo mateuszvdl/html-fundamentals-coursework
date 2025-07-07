@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Quiz</title></head>
+    <body>
+        <div>
+            <p>Jaka jest stolica Kanady?</p>
+            <input type="radio" id="Ottawa" name="Canada" value="Ottawa" class="correct">
+            <label id="LabelOttawa" class="correct" for="Ottawa">Ottawa</label><br>
+            <input type="radio" id="Toronto" name="Canada" value="Toronto">
+            <label id="LabelToronto" for="Toronto">Toronto</label><br>
+            <input type="radio" id="Vancouver" name="Canada" value="Vancouver">
+            <label id="LabelVancouver" for="Vancouver">Vancouver</label>
+        </div>
+        <div>
+            <p>Jaka jest stolica Holandii?</p>
+            <input type="radio" id="Ottawa1" name="Canada1" value="Ottawa1">
+            <label id="LabelOttawa1" for="Ottawa1">Berlin</label><br>
+            <input type="radio" id="Toronto1" name="Canada1" value="Toronto1" class="correct">
+            <label id="LabelToronto1" class="correct" for="Toronto1">Amsterdam</label><br>
+            <input type="radio" id="Vancouver1" name="Canada1" value="Vancouver1">
+            <label id="LabelVancouver1" for="Vancouver1">Warszawa</label>
+        </div>
+        <button id="myButton" onclick="submitQuestions()">Sprawdź</button>
+        <p id="myText"></p>
+        <script>
+            function markAllCorrectAnswers() {
+                var elements = document.getElementsByClassName("correct");
+                for(var i = 0; i < elements.length; i++) {
+                    if(elements[i].nodeName=="LABEL") {
+                        elements[i].style.color = "green";
+                    }
+                }
+
+            }
+            function submitQuestions() {
+                markAllCorrectAnswers();
+                var ele = document.getElementsByTagName("*");
+                for(var i = 0; i < ele.length; i++) {
+                    if (ele[i].nodeName=="INPUT" && ele[i].checked && !ele[i].classList.contains("correct")) {
+                        document.getElementById("Label" + ele[i].id).style.color = "red";
+                    }                       
+                }
+            }
+        </script>
+    </body>
+</html>
